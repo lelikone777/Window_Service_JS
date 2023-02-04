@@ -7,8 +7,12 @@ const changeModalState = (state) => {
       windowType = document.querySelectorAll('#view_type'),
       windowProfile = document.querySelectorAll('.checkbox');
 
-  checkNumInputs('#width'),
+  checkNumInputs('#width');
   checkNumInputs('#height');
+
+  // if  (windowWidth.value.length < 1 || windowHeight.value.length < 1) {
+  //   document.querySelector('.popup_calc .popup_calc_button').setAttribute('disabled', 'disabled');
+  // }
 
   function bindActionToElems(event, elem, prop) {
     elem.forEach((item, i) => {
